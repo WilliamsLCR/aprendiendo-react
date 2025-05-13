@@ -4,6 +4,8 @@ import Tabla from './pages/Tabla';
 import TablaApi from './pages/TablaApi';
 import Contador from './pages/Contador';
 import UsoReactRoute from './pages/UsoReactRoute';
+import GoogleMapas from './pages/GoogleMapas';
+import GoogleMapasDirecciones from './pages/GoogleMapasDirecciones';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -20,6 +22,8 @@ export default function App() {
           <Button color="inherit" component={Link} to="/Tabla">Tabla</Button>
           <Button color="inherit" component={Link} to="/TablaApi">Tabla con API</Button>
           <Button color="inherit" component={Link} to="/UsoReactRoute">Routes</Button>
+          <Button color="inherit" component={Link} to="/GoogleMapas">Google Maps</Button>
+          <Button color="inherit" component={Link} to="/GoogleMapasDirecciones">Mapas Direcciones</Button>
         </Toolbar>
       </AppBar>
 
@@ -29,6 +33,8 @@ export default function App() {
         <Route path="/Tabla" element={<Tabla />} />
         <Route path="/TablaApi" element={<TablaApi />} />
         <Route path="/UsoReactRoute" element={<UsoReactRoute />} />
+        <Route path="/GoogleMapas" element={<GoogleMapas/>} />
+        <Route path="/GoogleMapasDirecciones" element={<GoogleMapasDirecciones/>} />
       </Routes>
     </Box>
   );
